@@ -20,6 +20,19 @@ function stopShow(){
            
 function runShow() {
     changeImage();
-}   
+}
+
+var onoff = false;
+
+function onlybtn() {
+    if(onoff == false){
+        stopShow();
+        onoff = true;
+    }
+    else{
+        runShow();
+        onoff = false;
+    }
+}
            
 window.onload = runShow; 
