@@ -14,10 +14,19 @@
     <script src="app.js"></script>
 
     <img src="imagenes/logo.png" height="250" width="500">
-    <div id="credits"><center>Powered by Riezzek <br> v0.0.2 alpha</center></div>
-    <img id="slide" runShow()>
+    <div id="credits"><center>Powered by Riezzek <br> v0.0.3 alpha</center></div>
+    <img id="slide" src="imagenes/ini.gif">
 
-    <a href="#" class="button" onclick="onlybtn()">STOP/PLAY</a>
+    <a href="#" class="button" onclick="onlybtn()"><label>STOP/PLAY</label></a>
+
+    <div class="radioBtn">
+        <input label="Todos" type="radio" name="vector" id="all" onclick="rolSelector(1)" checked>
+        <input label="L-Oro" type="radio" name="vector" id="gold" onclick="rolSelector(2)">
+        <input label="L-Experiencia" type="radio" name="vector" id="exp" onclick="rolSelector(3)">
+        <input label="L-Media" type="radio" name="vector" id="mid" onclick="rolSelector(4)">
+        <input label="Jungla" type="radio" name="vector" id="jungle" onclick="rolSelector(5)">
+        <input label="Recorrer" type="radio" name="vector" id="roamer" onclick="rolSelector(6)">
+    </div>
 
 </body>
 </html>
